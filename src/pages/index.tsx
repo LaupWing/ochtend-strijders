@@ -9,7 +9,7 @@ const Home: NextPage = () => {
    return (
       <Layout>
          <header className='w-full h-14 bg-secundair'></header>
-         <main className='my-2 space-y-4 p-2 overflow-y-auto'>
+         <main className='my-2 space-y-4 p-2 overflow-y-auto pb-16'>
             {placeholder.map(a=>(
                <Excercise key={a}/>
             ))}
