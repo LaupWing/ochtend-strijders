@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import {HiPlus} from 'react-icons/hi'
 import Excercise from '../components/Excercise'
 import Layout from '../components/Layout'
-import Modal from 'react-modal'
+import AddExcercise from '../components/AddExcercise'
 
 const Home: NextPage = () => {
    const placeholder = [1, 2, 3]
@@ -15,10 +15,7 @@ const Home: NextPage = () => {
                <Excercise key={a}/>
             ))}
          </main>
-         <Modal 
-            isOpen={true}
-            overlayClassName='bg-main inset-0 fixed bg-opacity-90'
-         />
+         <AddExcercise/>
          <button 
             className='font-bold text-2xl w-12 h-12 bg-accept rounded-full flex justify-center items-center text-white fixed bottom-5 right-5 shadow'
          >

@@ -10,6 +10,7 @@ module.exports = {
             main: '#94cff1',
             secundair: '#fdd400',
             accept: '#04ab75',
+            denied: '#e53f2c',
             dark: '#afbfb5'
          }
       },
