@@ -9,7 +9,8 @@ module.exports = {
          colors:{
             main: '#94cff1',
             secundair: '#fdd400',
-            accept: '#04ab75'
+            accept: '#04ab75',
+            dark: '#afbfb5'
          }
       },
    },
