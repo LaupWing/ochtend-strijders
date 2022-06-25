@@ -21,7 +21,10 @@ const AddExcercise = () => {
                   placeholder='Oefening'
                />
             </div>
-            <Counter/>
+            <div className='flex justify-between'>
+               <Counter label='kg'/>
+               <Counter label='reps'/>
+            </div>
          </main>
       </Modal>
    )
