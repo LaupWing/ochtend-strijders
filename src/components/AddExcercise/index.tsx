@@ -14,16 +14,16 @@ const AddExcercise = () => {
          </header>
          <main className='p-2 space-y-4 my-4'>
             <div className='w-full flex flex-col'>
-               <p className='font-bold bg-secundair text-white text-center text-xs mr-auto px-4 rounded-t uppercase'>Oefeningen</p>
+               <p className='font-bold bg-highlight text-white text-center text-xs mr-auto px-4 rounded-t uppercase'>Oefeningen</p>
                <input 
                   type="text" 
-                  className='w-full border-2 px-2 py-1 border-secundair rounded rounded-tl-none'
+                  className='w-full border-2 px-2 py-1 border-highlight rounded rounded-tl-none'
                   placeholder='Oefening'
                />
             </div>
             <div className='flex items-end space-x-2'>
-               <div className='flex flex-col mt-auto border-2 border-secundair rounded'>
-                  <p className='font-bold bg-secundair text-white text-center text-xs uppercase'>KG</p>
+               <div className='flex flex-col mt-auto border-2 border-highlight rounded'>
+                  <p className='font-bold bg-highlight text-white text-center text-xs uppercase'>KG</p>
                   <div className='flex p-1'>
                      <button className='w-6 h-6 border-2 flex items-center justify-center text-denied border-denied rounded-full'>
                         <HiOutlineMinus/>

@@ -11,7 +11,8 @@ module.exports = {
             secundair: '#fdd400',
             accept: '#04ab75',
             denied: '#e53f2c',
-            dark: '#afbfb5'
+            dark: '#afbfb5',
+            highlight: '#5cbce7'
          }
       },
    },
