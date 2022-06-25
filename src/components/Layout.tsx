@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { FC, ReactNode } from 'react'
 
-const Layout = () => {
+interface Props {
+   children?: ReactNode
+}
+
+const Layout:FC<Props> = ({ children }) => {
    return (
-      <div>Layout</div>
+      <div className='fixed inset-0 bg-main'>
+         {children}
+      </div>
    )
 }
 
