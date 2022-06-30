@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react'
-import { HiOutlineMinus, HiPlus } from 'react-icons/hi'
+import { HiOutlineLockClosed, HiOutlineMinus, HiPlus } from 'react-icons/hi'
 
 interface Props {
    label: string
@@ -11,7 +11,9 @@ const Counter:FC<Props> = ({label}) => {
    return (
       <div className='flex items-end space-x-2'>
          <div className='flex flex-col mt-auto border-2 border-highlight rounded'>
-            <p className='font-bold bg-highlight text-white text-center text-xs uppercase'>{label}</p>
+            <header className='font-bold bg-highlight text-white text-center text-xs uppercase'>
+               <h2>{label}</h2>
+            </header>
             <div className='flex p-1'>
                <button 
                   className='w-6 h-6 border-2 flex items-center justify-center text-denied border-denied rounded-full'
