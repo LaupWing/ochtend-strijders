@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 import { HiOutlineMinus, HiPlus } from 'react-icons/hi'
 
 interface Props {
@@ -6,20 +6,30 @@ interface Props {
 }
 
 const Counter:FC<Props> = ({label}) => {
+   const [value, setValue] = useState<number>(0)
+
    return (
       <div className='flex items-end space-x-2'>
          <div className='flex flex-col mt-auto border-2 border-highlight rounded'>
             <p className='font-bold bg-highlight text-white text-center text-xs uppercase'>{label}</p>
             <div className='flex p-1'>
-               <button className='w-6 h-6 border-2 flex items-center justify-center text-denied border-denied rounded-full'>
+               <button 
+                  className='w-6 h-6 border-2 flex items-center justify-center text-denied border-denied rounded-full'
+                  onClick={()=>setValue(value - 1)}
+               >
                   <HiOutlineMinus/>
                </button>
                <input 
                   type="number" 
                   placeholder='1'
+                  value={value}
+                  onChange={e=>setValue(Number(e.target.value))}
                   className=' rounded-b w-14 text-center'
                />
-               <button className='w-6 h-6 border-2 flex items-center justify-center text-accept border-accept rounded-full'>
+               <button 
+                  className='w-6 h-6 border-2 flex items-center justify-center text-accept border-accept rounded-full'
+                  onClick={()=>setValue(value + 1)}
+               >
                   <HiPlus/>
                </button>
             </div>
