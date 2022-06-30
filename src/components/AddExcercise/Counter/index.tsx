@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react'
-import { HiOutlineLockClosed, HiOutlineMinus, HiPlus } from 'react-icons/hi'
+import { HiOutlineMinus, HiPlus } from 'react-icons/hi'
 
 interface Props {
    label: string
